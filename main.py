@@ -9,7 +9,21 @@ for i in range(nb):
 print("liste des étudiants:")
 for e in etudiants:
     print(e)
+notes = []
+somme = 0
 
+for i in range(nb):
+    note = float(input("entrer la note" + etudiants[i] + ": "))
+    notes.append(note)
+    somme = somme + note
+
+moyenne = somme / nb
+print("la moyenne est:", moyenne)
+
+if moyenne >= 10:
+    print("Admis")
+else:
+    print("Ajourné")
 
 notes = []
 somme = 0
